@@ -1,0 +1,56 @@
+.header
+  background: #000000 url('../img/picture/header-bg.jpg') center no-repeat
+  background-size: cover
+  &-social
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0.6rem 0 1rem
+    &__phone
+      display: flex
+      align-items: center
+    &__link
+      padding-right: 1rem
+  &-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0.5rem 0 0.8rem 
+.phone
+  &-number
+    padding-left: 0.5rem
+    font-size: 1.125rem
+    color: $light
+.link-image
+  padding-left: 2rem
+.main
+  &-logo
+    display: flex
+    align-items: center
+    &__text
+      font-family: sans-serif
+      font-size: 1.5rem
+      letter-spacing: 2px
+      font-weight: bold
+      text-transform: uppercase
+      color: $mainColor
+.navigation
+  display: flex
+.menu
+  display: flex
+  align-items: center
+  justify-content: space-between
+  list-style-type: none
+  &__item
+    color: $light
+    &-link
+      padding: 0.25rem 1rem
+      font-size: 1rem
+      line-height: 1.5
+      text-transform: uppercase
+      color: $light
+      transition: 0.3s
+      &:hover
+        cursor: pointer
+        color: $black
+        background-color: $light
