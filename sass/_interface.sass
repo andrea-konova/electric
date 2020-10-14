@@ -17,7 +17,7 @@
     position: relative
     margin: 0
     padding-bottom: 3.375rem
-    font-size: 1.875rem
+    font-size: 1.5rem
     letter-spacing: 0.5px
     &--after
       color: $light
@@ -46,15 +46,18 @@
         top: -0.25rem
         left: 0
         content: ''
-        border: 20px solid transparent
-        border-left: 20px solid $black 
-        border-top: 20px solid $black
+        border: 1rem solid transparent
+        border-left: 1rem solid $black 
+        border-top: 1rem solid $black
 .text
   margin: 0
   font-size: 1rem
   line-height: 1.5rem
   &--light
     color: $light
+  &-big
+    margin-bottom: 2rem
+    font-size: 1.5rem
 .triangle
   z-index: 2
   &__bottom
@@ -66,8 +69,21 @@
       right: -0.8rem
       z-index: -1
       content: ''
-      border: 40px solid transparent
-      border-right: 40px solid $black 
-      border-bottom: 40px solid $black
-
-
+      border: 2.5rem solid transparent
+      border-right: 2.5rem solid $black 
+      border-bottom: 2.5rem solid $black
+.first-row
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__head
+    margin-top: 2rem
+    &--light
+      color: $light
+.head
+  &-subtitle
+    margin: 0 0 0.5rem 0
+    font-size: 2.5rem
+  &-title
+    margin: 0 
+    font-size: 2.875rem

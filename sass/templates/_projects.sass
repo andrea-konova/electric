@@ -1,0 +1,56 @@
+.projects
+  padding-bottom: 0
+  &__row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 3.75rem
+  &-item
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-basis: 48%
+    min-height: 15rem
+    margin-bottom: 5rem
+  &__img-wrap
+    width: 15rem
+    height: 18rem
+    max-width: 34rem
+    // padding: 0 0 30% 0
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+  &__triangle
+    position: relative
+    padding-bottom: 3rem
+    &::after
+      position: absolute
+      bottom: 2rem
+      right: -1rem
+      z-index: -1
+      content: ''
+      border: 6.25rem solid transparent
+      border-right: 6.25rem solid $black 
+      border-bottom: 6.25rem solid $black
+  &__top-triangle
+    position: relative
+    padding-bottom: 3rem
+    &::before
+      position: absolute
+      top: -1rem
+      left: -1rem
+      z-index: -1
+      content: ''
+      border: 6.25rem solid transparent
+      border-left: 6.25rem solid $darc-m 
+      border-top: 6.25rem solid $darc-m
+  &-description
+    width: 15rem
+  &__button
+    margin-top: 2rem
+    padding: 0.5rem 1rem
+.hidden
+  display: none
