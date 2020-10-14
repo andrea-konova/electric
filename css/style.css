@@ -350,21 +350,45 @@ a {
     cursor: pointer;
     background-color: #221A00; }
 
+.section {
+  padding: 7.5rem; }
+
 .block__heading {
   position: relative;
   margin: 0;
   padding-bottom: 3.375rem;
   font-size: 1.875rem;
-  letter-spacing: 0.5px;
-  color: #ffffff; }
-  .block__heading--after::after {
-    position: absolute;
-    bottom: 1.8rem;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff; }
+  letter-spacing: 0.5px; }
+  .block__heading--after {
+    color: #ffffff; }
+    .block__heading--after::after {
+      position: absolute;
+      bottom: 1.8rem;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff; }
+  .block__heading--all {
+    padding: 2.5rem 0;
+    max-width: 15.625rem;
+    text-transform: uppercase; }
+    .block__heading--all::after {
+      position: absolute;
+      bottom: 1.8rem;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: #111111; }
+    .block__heading--all::before {
+      position: absolute;
+      top: -0.25rem;
+      left: 0;
+      content: '';
+      border: 20px solid transparent;
+      border-left: 20px solid #111111;
+      border-top: 20px solid #111111; }
 
 .text {
   margin: 0;
@@ -372,6 +396,21 @@ a {
   line-height: 1.5rem; }
   .text--light {
     color: #ffffff; }
+
+.triangle {
+  z-index: 2; }
+  .triangle__bottom {
+    position: relative;
+    padding-bottom: 3rem; }
+    .triangle__bottom::after {
+      position: absolute;
+      bottom: 2.5rem;
+      right: -0.8rem;
+      z-index: -1;
+      content: '';
+      border: 40px solid transparent;
+      border-right: 40px solid #111111;
+      border-bottom: 40px solid #111111; }
 
 .header {
   position: fixed;
@@ -455,6 +494,25 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffffff; }
+
+.feedback__row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 3rem; }
+
+.feedback-slide {
+  width: 48%; }
+
+.slide-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 16rem; }
+  .slide-user__name {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #a0a0a0; }
 
 .footer {
   padding: 3.375rem 0;
