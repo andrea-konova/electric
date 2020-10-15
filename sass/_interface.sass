@@ -58,6 +58,8 @@
   &-big
     margin-bottom: 2rem
     font-size: 1.5rem
+  &--uppercase
+    text-transform: uppercase
 .triangle
   z-index: 2
   &__bottom
@@ -78,12 +80,14 @@
   justify-content: space-between
   &__head
     margin-top: 2rem
-    &--light
-      color: $light
+.light
+    color: $light
 .head
   &-subtitle
     margin: 0 0 0.5rem 0
     font-size: 2.5rem
+
   &-title
     margin: 0 
     font-size: 2.875rem
+    text-transform: capitalize
