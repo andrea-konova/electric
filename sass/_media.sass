@@ -4,3 +4,63 @@
 @media screen and ( max-width: 992px )
   html
     font-size: 12px
+@media screen and ( max-width: 760px )
+  .header
+    &-menu
+      flex-direction: column
+      padding-bottom: 0
+  .main-screen 
+    padding: 5rem 0 10rem
+@media screen and ( max-width: 576px )
+  .header
+    &-hide
+      display: none
+  .burger
+    display: block
+    position: absolute
+    top: 65px
+    right: 6%
+    width: 30px
+    height: 3px
+    background-color: $mainColor
+    border: none
+    cursor: pointer
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      margin-top: -10px
+      top: 0
+      right: 0
+      width: 30px
+      height: 3px
+      transition: transform 0.2s
+      background-color: $mainColor
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      margin-top: 10px
+      top: 0
+      right: 0
+      width: 30px
+      height: 3px
+      transition: transform 0.2s
+      background-color: $mainColor
+    &--active
+      height: 0
+      &::before
+        transform: rotate(45deg)
+        margin-top: 0
+      &::after
+        transform: rotate(-45deg)
+        margin-top: 0
+  .menu
+    flex-direction: column
+    &__item
+      margin-bottom: 1rem
+      &-link
+        font-size: 1.3rem
+        font-weight: bold
+  .main
+    margin-top: 0

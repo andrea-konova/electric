@@ -802,3 +802,63 @@ a {
 @media screen and (max-width: 992px) {
   html {
     font-size: 12px; } }
+
+@media screen and (max-width: 760px) {
+  .header-menu {
+    flex-direction: column;
+    padding-bottom: 0; }
+  .main-screen {
+    padding: 5rem 0 10rem; } }
+
+@media screen and (max-width: 576px) {
+  .header-hide {
+    display: none; }
+  .burger {
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 6%;
+    width: 30px;
+    height: 3px;
+    background-color: #feb003;
+    border: none;
+    cursor: pointer; }
+    .burger::before {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-top: -10px;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 3px;
+      transition: transform 0.2s;
+      background-color: #feb003; }
+    .burger::after {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-top: 10px;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 3px;
+      transition: transform 0.2s;
+      background-color: #feb003; }
+    .burger--active {
+      height: 0; }
+      .burger--active::before {
+        transform: rotate(45deg);
+        margin-top: 0; }
+      .burger--active::after {
+        transform: rotate(-45deg);
+        margin-top: 0; }
+  .menu {
+    flex-direction: column; }
+    .menu__item {
+      margin-bottom: 1rem; }
+      .menu__item-link {
+        font-size: 1.3rem;
+        font-weight: bold; }
+  .main {
+    margin-top: 0; } }
