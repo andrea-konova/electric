@@ -4,13 +4,39 @@
 @media screen and ( max-width: 992px )
   html
     font-size: 12px
+  .first-row
+    &__head
+      flex-basis: 45%
+      margin-bottom: 2rem
+      padding-right: 1rem
+  .services
+    &__text
+      flex-basis: 85%
+      max-width: 35rem
+  .about
+    &__row
+      flex-direction: column-reverse
+      align-items: center
+    &__first-row
+      margin: 3rem 0 3rem
 @media screen and ( max-width: 760px )
   .header
     &-menu
       flex-direction: column
       padding-bottom: 0
+  .menu
+    padding-left: 0
   .main-screen 
     padding: 5rem 0 10rem
+  .first-row
+    &__head
+      flex-basis: 65%
+      padding-right: 0
+  .services
+    &__row
+      justify-content: space-around
+    &-card 
+      flex-basis: 35%
 @media screen and ( max-width: 576px )
   .header
     &-hide
@@ -64,3 +90,6 @@
         font-weight: bold
   .main
     margin-top: 0
+  .services
+    &-card 
+      flex-basis: 55%
