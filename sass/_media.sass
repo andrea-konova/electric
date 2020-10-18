@@ -19,6 +19,10 @@
       align-items: center
     &__first-row
       margin: 3rem 0 3rem
+  .feedback
+    &-button
+      &-prev
+        left: 83%
 @media screen and ( max-width: 760px )
   .header
     &-menu
@@ -37,6 +41,10 @@
       justify-content: space-around
     &-card 
       flex-basis: 35%
+  .feedback
+    &-button
+      &-prev
+        left: 75%
 @media screen and ( max-width: 576px )
   .header
     &-hide
@@ -93,3 +101,11 @@
   .services
     &-card 
       flex-basis: 55%
+  .feedback
+    &-button
+      &-prev, &-next
+        top: 90%
+      &-prev
+        left: 0
+      &-next
+        right: 0

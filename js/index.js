@@ -3,7 +3,7 @@ import { burgerMenu } from './modules/burgerMenu.js';
 // import { smoothScroll } from './modules/smoothScroll.js';
 // import { popup } from './modules/popup.js';
 // import { mainSlider } from './modules/mainSlider.js';
-// import { feedbackSlider } from './modules/feedbackSlider.js';
+import { feedbackSlider } from './modules/feedbackSlider.js';
 // import { sendForms } from './modules/sendForms.js';
 
 // new WOW().init();
@@ -13,5 +13,5 @@ burgerMenu();
 // smoothScroll();
 // popup();
 // mainSlider();
-// feedbackSlider();
+feedbackSlider();
 // sendForms();

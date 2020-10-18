@@ -1,15 +1,19 @@
 export const feedbackSlider = () => {
 	new Swiper('.swiper-container', {
-		loop: true,
+    loop: true,
+    slidesPerView: 2,
 		navigation: {
-			nextEl: '.feedback-button-next',
-			prevEl: '.feedback-button-prev',
-		},
-		pagination: {
-			el: '.feedback-pagination',
-			bulletClass: 'feedback-bullet',
-			bulletActiveClass: 'feedback-bullet-active',
-			clickable: true
-		},
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      760: {
+        slidesPerView: 2
+      }
+    }
 	});
 };

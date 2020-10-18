@@ -528,7 +528,7 @@ a {
   background-color: #000000; }
   .services__text {
     flex-basis: 60%;
-    max-width: 32rem; }
+    max-width: 40rem; }
   .services-block {
     position: relative;
     margin: 0;
@@ -703,13 +703,33 @@ a {
 
 .feedback {
   padding-top: 0; }
+  .feedback__container {
+    position: relative; }
   .feedback__row {
     display: flex;
     align-items: start;
     justify-content: space-between;
     margin-top: 3rem; }
   .feedback-slide {
-    width: 48%; }
+    width: 100%;
+    padding: 0 2rem 0 0.5rem; }
+  .feedback-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .feedback-button-prev, .feedback-button-next {
+    position: absolute;
+    top: 10%;
+    background-size: 42px;
+    width: 56px;
+    height: 56px; }
+    .feedback-button-prev::after, .feedback-button-next::after {
+      display: none; }
+  .feedback-button-prev {
+    left: 87%;
+    background: url("../img/icon/arrow-left.png") no-repeat center; }
+  .feedback-button-next {
+    background: url("../img/icon/arrow-right.png") no-repeat center; }
 
 .slide-user {
   display: flex;
@@ -717,9 +737,18 @@ a {
   justify-content: space-between;
   max-width: 16rem; }
   .slide-user__name {
-    margin: 0;
+    margin: 0 0 0 2rem;
     font-size: 1.25rem;
     color: #a0a0a0; }
+
+.swiper-slide {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%; }
+
+.swiper-container {
+  width: 100%; }
 
 .footer {
   padding: 3.375rem 0;
@@ -826,7 +855,9 @@ a {
     flex-direction: column-reverse;
     align-items: center; }
   .about__first-row {
-    margin: 3rem 0 3rem; } }
+    margin: 3rem 0 3rem; }
+  .feedback-button-prev {
+    left: 83%; } }
 
 @media screen and (max-width: 760px) {
   .header-menu {
@@ -842,7 +873,9 @@ a {
   .services__row {
     justify-content: space-around; }
   .services-card {
-    flex-basis: 35%; } }
+    flex-basis: 35%; }
+  .feedback-button-prev {
+    left: 75%; } }
 
 @media screen and (max-width: 576px) {
   .header-hide {
@@ -897,4 +930,10 @@ a {
   .main {
     margin-top: 0; }
   .services-card {
-    flex-basis: 55%; } }
+    flex-basis: 55%; }
+  .feedback-button-prev, .feedback-button-next {
+    top: 90%; }
+  .feedback-button-prev {
+    left: 0; }
+  .feedback-button-next {
+    right: 0; } }
