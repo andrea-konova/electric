@@ -1,6 +1,6 @@
 // import { preloader } from './modules/preloader.js';
 import { burgerMenu } from './modules/burgerMenu.js';
-// import { smoothScroll } from './modules/smoothScroll.js';
+import { smoothScroll } from './modules/smoothScroll.js';
 // import { popup } from './modules/popup.js';
 // import { mainSlider } from './modules/mainSlider.js';
 import { feedbackSlider } from './modules/feedbackSlider.js';
@@ -10,7 +10,7 @@ import { feedbackSlider } from './modules/feedbackSlider.js';
 
 // preloader();
 burgerMenu();
-// smoothScroll();
+smoothScroll();
 // popup();
 // mainSlider();
 feedbackSlider();

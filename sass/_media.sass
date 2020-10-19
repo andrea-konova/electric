@@ -1,6 +1,17 @@
 @media screen and ( max-width: 1200px )
   html
     font-size: 14px
+  .projects
+    &__triangle
+      &::after
+        border: 5.25rem solid transparent
+        border-right: 5.25rem solid $black 
+        border-bottom: 5.25rem solid $black
+    &__top-triangle
+      &::before
+        border: 5.25rem solid transparent
+        border-left: 5.25rem solid $darc-m 
+        border-top: 5.25rem solid $darc-m
 @media screen and ( max-width: 992px )
   html
     font-size: 12px
@@ -13,12 +24,26 @@
     &__text
       flex-basis: 85%
       max-width: 35rem
-  .about
+  .projects
     &__row
-      flex-direction: column-reverse
-      align-items: center
-    &__first-row
-      margin: 3rem 0 3rem
+      justify-content: center
+      margin-top: 3.75rem
+    &-item
+      width: 85%
+      max-width: 45rem
+    &__triangle
+      &::after
+        border: 9.25rem solid transparent
+        border-right: 9.25rem solid $black 
+        border-bottom: 9.25rem solid $black
+    &__top-triangle
+      &::before
+        border: 9.25rem solid transparent
+        border-left: 9.25rem solid $darc-m 
+        border-top: 9.25rem solid $darc-m
+    &-description
+      width: 45%
+      max-width: 16rem
   .feedback
     &-button
       &-prev
@@ -41,10 +66,49 @@
       justify-content: space-around
     &-card 
       flex-basis: 35%
+  .about
+    &__row
+      flex-direction: column-reverse
+      align-items: center
+    &__img-wrap
+      width: 65%
+    &__first-row
+      margin: 3rem 0 3rem
+      width: 100%
+    &__text
+      width: 100%
+      max-width: 50rem
+  .projects
+    &-item
+      width: 90%
+      max-width: 40rem
+    &__triangle
+      &::after
+        border: 6.25rem solid transparent
+        border-right: 6.25rem solid $black 
+        border-bottom: 6.25rem solid $black
+    &__top-triangle
+      &::before
+        border: 6.25rem solid transparent
+        border-left: 6.25rem solid $darc-m 
+        border-top: 6.25rem solid $darc-m
   .feedback
     &-button
       &-prev
         left: 75%
+  .footer
+    &__row
+      flex-direction: column
+      align-items: center
+    &__contacts
+      width: 80%
+  .quote
+    &__form-wrap
+      padding-bottom: 3rem
+      width: 80%
+      max-width: 42rem
+  .textarea
+    max-width: 42rem
 @media screen and ( max-width: 576px )
   .header
     &-hide
@@ -101,11 +165,52 @@
   .services
     &-card 
       flex-basis: 55%
+  .about
+    &__img-wrap
+      width: 100%
+  .projects
+    &-item
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+      max-width: 40rem
+    &__img-wrap
+      width: 60%
+      max-width: 30rem
+    &__triangle
+      &::after
+        bottom: 2.25rem
+        right: -0.75rem
+        border: 6.25rem solid transparent
+        border-right: 6.25rem solid $black 
+        border-bottom: 6.25rem solid $black
+    &__top-triangle
+      &::before
+        top: -0.75rem
+        left: -0.75rem
+        border: 6.25rem solid transparent
+        border-left: 6.25rem solid $darc-m 
+        border-top: 6.25rem solid $darc-m
+    &-description
+      width: 95%
+      max-width: 30rem
+      margin-left: 0
   .feedback
+    &__row
+      margin-top: 0
+    &-slide
+      padding: 0 0.5rem
     &-button
       &-prev, &-next
-        top: 90%
+        top: 100%
       &-prev
-        left: 0
+        left: 20%
       &-next
-        right: 0
+        right: 20%
+  .slide
+    &-user
+      max-width: 25rem
+      &__photo
+        display: none
+      &__name
+        margin: 0 0 1rem 0

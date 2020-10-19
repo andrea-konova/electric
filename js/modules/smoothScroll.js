@@ -1,5 +1,5 @@
 export const smoothScroll = () => {
-	const menu = document.querySelector('.header__menu');
+	const menu = document.querySelector('.menu');
 
 	menu.addEventListener('click', event => {
 		event.preventDefault();
@@ -13,34 +13,18 @@ export const smoothScroll = () => {
 				block: 'start'
 			});
 		}
-	});
+  });
+  
+  const headerMenu = document.querySelector('.header-menu');
 
-	const footerMenu = document.querySelector('.footer__nav');
-
-	footerMenu.addEventListener('click', event => {
+	headerMenu.addEventListener('click', event => {
 		event.preventDefault();
 		const target = event.target;
 
 		if (target.matches('a[href*="#"]')) {
-			const footerMenuId = target.getAttribute('href').substring(1);
+			const headerMenuId = target.getAttribute('href').substring(1);
 
-			document.getElementById(footerMenuId).scrollIntoView({
-				behavior: 'smooth',
-				block: 'start'
-			});
-		}
-	});
-
-	const footerLink = document.querySelector('.footer-logo__link');
-
-	footerLink.addEventListener('click', event => {
-		event.preventDefault();
-		const target = event.target;
-
-		if (target.matches('a[href*="#"]')) {
-			const footerLinkId = target.getAttribute('href').substring(1);
-
-			document.getElementById(footerLinkId).scrollIntoView({
+			document.getElementById(headerMenuId).scrollIntoView({
 				behavior: 'smooth',
 				block: 'start'
 			});
