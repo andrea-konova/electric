@@ -15,6 +15,17 @@
 @media screen and ( max-width: 992px )
   html
     font-size: 12px
+  .button
+    &:hover
+      cursor: default
+      background-color: $black
+  .menu
+    &__item
+      &-link
+        &:hover
+          cursor: default
+          color: $light
+          background-color: transparent
   .first-row
     &__head
       flex-basis: 45%
@@ -24,6 +35,10 @@
     &__text
       flex-basis: 85%
       max-width: 35rem
+    &-button
+      &:hover
+        background-color: $black-m
+        color: $light
   .projects
     &__row
       justify-content: center

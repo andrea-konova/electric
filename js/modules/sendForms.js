@@ -1,7 +1,7 @@
 export const sendForms = () => {
 
 	const tel = document.querySelectorAll('input[type="tel"]');
-	const telMask = new Inputmask('+7 (999) 999-99-99');
+	const telMask = new Inputmask('+38 (999) 999-99-99');
   telMask.mask(tel);
   
   const errorMessage = 'Что-то пошло не так...',
@@ -11,7 +11,7 @@ export const sendForms = () => {
 
 	const statusMessage = document.createElement('div');
 	statusMessage.style.cssText = 'font-size: 1.5rem;';
-	statusMessage.style.color = '#111111';
+	statusMessage.style.color = '#feb003';
 
 	const hideStatusMessage = () => {
 		statusMessage.style.display = 'none';

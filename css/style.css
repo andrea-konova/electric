@@ -350,6 +350,12 @@ a {
   .button:hover {
     cursor: pointer;
     background-color: #221A00; }
+  .button__popup {
+    font-weight: bold;
+    box-shadow: none;
+    background-color: #feb003; }
+    .button__popup:hover {
+      background-color: #A67D24; }
 
 .section {
   padding: 7.5rem 2rem; }
@@ -827,11 +833,11 @@ a {
 
 .form__input {
   padding: 0.7rem;
-  color: #e1e1e1; }
+  color: #111111; }
 
 .input {
   width: 100%;
-  border: 1px solid #e1e1e1; }
+  border: 1px solid #111111; }
 
 .textarea {
   width: 100%;
@@ -842,6 +848,71 @@ a {
   position: absolute;
   bottom: 11px;
     bottom-left: 3px; }
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(34, 26, 0, 0.6); }
+  .popup-group {
+    width: 100%; }
+  .popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent url("../img/icon/close.png") no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    width: 70%;
+    max-width: 25rem;
+    transform: translateX(-50%);
+    background-color: #111111;
+    color: #ffffff; }
+  .popup-heading {
+    margin: 0;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    text-align: center; }
+    .popup-heading--second {
+      padding-top: 0; }
+  .popup__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    width: 80%; }
+  .popup__input {
+    width: 100%; }
+  .popup-table {
+    padding: 1rem;
+    width: 100%;
+    border-spacing: 4px; }
+    .popup-table__th, .popup-table__tr, .popup-table__td {
+      font-size: 1rem; }
+    .popup-table__td {
+      padding: 0.5rem 0;
+      text-align: center; }
+  .popup-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -858,6 +929,13 @@ a {
 @media screen and (max-width: 992px) {
   html {
     font-size: 12px; }
+  .button:hover {
+    cursor: default;
+    background-color: #111111; }
+  .menu__item-link:hover {
+    cursor: default;
+    color: #ffffff;
+    background-color: transparent; }
   .first-row__head {
     flex-basis: 45%;
     margin-bottom: 2rem;
@@ -865,6 +943,9 @@ a {
   .services__text {
     flex-basis: 85%;
     max-width: 35rem; }
+  .services-button:hover {
+    background-color: #000000;
+    color: #ffffff; }
   .projects__row {
     justify-content: center;
     margin-top: 3.75rem; }
