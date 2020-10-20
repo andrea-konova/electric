@@ -351,6 +351,7 @@ a {
     cursor: pointer;
     background-color: #221A00; }
   .button__popup {
+    margin-bottom: 1rem;
     font-weight: bold;
     box-shadow: none;
     background-color: #feb003; }
@@ -667,10 +668,8 @@ a {
     min-height: 15rem;
     margin-bottom: 5rem; }
   .projects__img-wrap {
-    width: 50%;
-    max-width: 15rem;
-    height: auto;
-    max-width: 34rem; }
+    width: 60%;
+    height: 17rem; }
   .projects__image {
     width: 100%;
     height: 100%;
@@ -880,7 +879,7 @@ a {
     left: 50%;
     top: 20%;
     width: 70%;
-    max-width: 25rem;
+    max-width: 35rem;
     transform: translateX(-50%);
     background-color: #111111;
     color: #ffffff; }
@@ -889,6 +888,8 @@ a {
     padding-top: 3rem;
     font-size: 1.5rem;
     text-align: center; }
+    .popup-heading__price {
+      margin-bottom: 1rem; }
     .popup-heading--second {
       padding-top: 0; }
   .popup__form {
@@ -896,23 +897,31 @@ a {
     align-items: center;
     flex-direction: column;
     padding: 2rem 1rem;
-    width: 80%; }
+    width: 100%; }
   .popup__input {
     width: 100%; }
   .popup-table {
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
     border-spacing: 4px; }
     .popup-table__th, .popup-table__tr, .popup-table__td {
       font-size: 1rem; }
     .popup-table__td {
       padding: 0.5rem 0;
-      text-align: center; }
+      text-align: left; }
+      .popup-table__td--price {
+        text-align: center; }
+      .popup-table__td--2 {
+        max-width: 10rem; }
+      .popup-table__td--3 {
+        max-width: 12rem; }
   .popup-label {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0; }
+  .popup-project {
+    display: none; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -952,14 +961,17 @@ a {
   .projects-item {
     width: 85%;
     max-width: 45rem; }
+  .projects__img-wrap {
+    width: 60%;
+    height: 20rem; }
   .projects__triangle::after {
-    border: 9.25rem solid transparent;
-    border-right: 9.25rem solid #111111;
-    border-bottom: 9.25rem solid #111111; }
+    border: 8.25rem solid transparent;
+    border-right: 8.25rem solid #111111;
+    border-bottom: 8.25rem solid #111111; }
   .projects__top-triangle::before {
-    border: 9.25rem solid transparent;
-    border-left: 9.25rem solid #a0a0a0;
-    border-top: 9.25rem solid #a0a0a0; }
+    border: 8.25rem solid transparent;
+    border-left: 8.25rem solid #a0a0a0;
+    border-top: 8.25rem solid #a0a0a0; }
   .projects-description {
     width: 45%;
     max-width: 16rem; }
@@ -1079,7 +1091,7 @@ a {
     width: 100%;
     max-width: 40rem; }
   .projects__img-wrap {
-    width: 60%;
+    width: 85%;
     max-width: 30rem; }
   .projects__triangle::after {
     bottom: 2.25rem;

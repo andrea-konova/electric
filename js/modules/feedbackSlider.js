@@ -1,10 +1,10 @@
 export const feedbackSlider = () => {
-	new Swiper('.swiper-container', {
+	new Swiper('.feedback-container', {
     loop: true,
     slidesPerView: 2,
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.feedback-button-prev',
+			prevEl: '.feedback-button-next',
     },
     breakpoints: {
       // when window width is >= 320px
