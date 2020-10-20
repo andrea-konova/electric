@@ -1,4 +1,3 @@
-// import { preloader } from './modules/preloader.js';
 import { burgerMenu } from './modules/burgerMenu.js';
 import { smoothScroll } from './modules/smoothScroll.js';
 import { addProjects } from './modules/addProjects.js';
@@ -9,7 +8,6 @@ import { sendForms } from './modules/sendForms.js';
 
 // new WOW().init();
 
-// preloader();
 burgerMenu();
 smoothScroll();
 addProjects();

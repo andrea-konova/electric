@@ -883,6 +883,12 @@ a {
     transform: translateX(-50%);
     background-color: #111111;
     color: #ffffff; }
+    .popup-content__project {
+      position: fixed;
+      left: 50%;
+      top: 20%;
+      width: 90%;
+      max-width: 50rem; }
   .popup-heading {
     margin: 0;
     padding-top: 3rem;
@@ -920,8 +926,17 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0; }
-  .popup-project {
-    display: none; }
+  .popup-body {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 100%;
+    z-index: 99; }
+    .popup-body__img-wrap {
+      margin: 0 auto;
+      width: 70%;
+      height: 20rem; }
+    .popup-body__list-item {
+      padding-bottom: 0.5rem; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1124,4 +1139,6 @@ a {
     .slide-user__photo {
       display: none; }
     .slide-user__name {
-      margin: 0 0 1rem 0; } }
+      margin: 0 0 1rem 0; }
+  .popup-body__img-wrap {
+    height: 15rem; } }
