@@ -32,12 +32,15 @@ export const sendForms = () => {
 					maxLength: 15
 				},
 				email: {
-					required: false,
+					required: true,
 					email: true
 				},
 				tel: {
 					required: true
-				}
+        },
+        mess: {
+          required: true
+        }
 			},
 			messages: {
 				name: {
@@ -50,7 +53,10 @@ export const sendForms = () => {
 				},
 				tel: {
 					required: 'Заполните поле телефон'
-				}
+        },
+        mess: {
+          required: 'Заполните поле сообщение'
+        }
 			},
 
 			submitHandler(form, values, ajax) {
@@ -80,6 +86,7 @@ export const sendForms = () => {
 		});
 	};
 
-	validateForms('.popup__form');
+  validateForms('.popup__form');
+  validateForms('.popup-question__form');
 	validateForms('.quote__form');
 };

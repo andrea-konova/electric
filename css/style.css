@@ -878,11 +878,13 @@ a {
     position: fixed;
     left: 50%;
     top: 20%;
-    width: 70%;
+    width: 45%;
     max-width: 35rem;
     transform: translateX(-50%);
     background-color: #111111;
     color: #ffffff; }
+    .popup-content--price {
+      width: 70%; }
     .popup-content__project {
       position: fixed;
       left: 50%;
@@ -1042,7 +1044,11 @@ a {
     width: 80%;
     max-width: 42rem; }
   .textarea {
-    max-width: 42rem; } }
+    max-width: 42rem; }
+  .popup-content {
+    width: 55%; }
+    .popup-content--price {
+      width: 90%; } }
 
 @media screen and (max-width: 576px) {
   .header-hide {
@@ -1140,5 +1146,10 @@ a {
       display: none; }
     .slide-user__name {
       margin: 0 0 1rem 0; }
+  .popup-content {
+    top: 15%;
+    width: 90%; }
+    .popup-content--price {
+      width: 90%; }
   .popup-body__img-wrap {
     height: 15rem; } }
