@@ -1048,7 +1048,15 @@ a {
   .popup-content {
     width: 55%; }
     .popup-content--price {
-      width: 90%; } }
+      width: 90%; }
+  .portfolio-content {
+    height: 17rem; }
+  .portfolio-btn.prev {
+    left: 0; }
+  .portfolio-btn.next {
+    right: 0; }
+  .portfolio-dots {
+    left: 32%; } }
 
 @media screen and (max-width: 576px) {
   .header-hide {
@@ -1103,7 +1111,9 @@ a {
   .main {
     margin-top: 0; }
   .services-card {
-    flex-basis: 55%; }
+    flex-basis: 90%; }
+  .services__img-wrap {
+    height: 17rem; }
   .about__img-wrap {
     width: 100%; }
   .projects-item {
@@ -1152,4 +1162,12 @@ a {
     .popup-content--price {
       width: 90%; }
   .popup-body__img-wrap {
-    height: 15rem; } }
+    height: 15rem; }
+  .portfolio-content {
+    height: 21rem; }
+  .portfolio-btn.prev {
+    left: 0; }
+  .portfolio-btn.next {
+    right: 0; }
+  .portfolio-dots {
+    left: 32%; } }
