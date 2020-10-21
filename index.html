@@ -13,14 +13,19 @@
   <header class="header">
     <div class="container">
       <div class="header-social">
-        <div class="header-social__phone">
-          <img src="img/icon/telephone.svg" alt="telephone" class="phone-icon">
-          <a href="tel:380991220380" class="phone-number">+380 99 122-03-80</a>
+        <div class="phone-number__wrap--header">
+          <div class="header-social__phone">
+            <img src="img/icon/telephone.svg" alt="telephone" class="phone-icon">
+            <a href="tel:380991220380" class="phone-number">+380 99 122-03-80</a>
+          </div>
+          <div class="header-social__phone">
+            <a href="tel:380990220380" class="phone-number">+380 99 022-03-80</a>
+          </div>
         </div>
         <div class="header-social__link">
           <a href="viber://add?number=380668159059" class="item"><img src="img/icon/viber.svg" alt="viber" class="link-image"></a>
-          <a href="mailto:Eduard220V@gmail.com" class="item"><img src="img/icon/gmail-logo.svg" alt="gmail" class="link-image"></a>
-          <a href="#" class="item"><img src="img/icon/telegram.svg" alt="telegram" class="link-image"></a>
+          <!-- <a href="mailto:Eduard220V@gmail.com" class="item"><img src="img/icon/gmail-logo.svg" alt="gmail" class="link-image"></a> -->
+          <a href="tg://resolve?domain=nikname" class="item"><img src="img/icon/telegram.svg" alt="telegram" class="link-image"></a>
         </div>
       </div>
       <div class="header-menu header-hide">
@@ -58,12 +63,92 @@
       <div class="main-screen">
         <h1 class="main-heading">Услуги электрика</h1>
         <p class="main-subheading">в Харькове и Харьковской области</p>
-        <button class="button popup-price-button">Узнать цены</button>
+        <div class="phone-number__wrap main__phone-number">
+          <a href="tel:380991220380" class="phone-number phone-number__item">+380 99 122-03-80</a>
+          <a href="tel:380990220380" class="phone-number phone-number__item">+380 99 022-03-80</a>
+        </div>
+        <a href="#price" class="button">Узнать цены</a>
       </div>
     </div>
     <!-- /.container -->
   </main>
   <!-- /.main -->
+  <section class="price section" id="price">
+    <div class="container">
+      <h3 class="block__heading services-block__heading light wow fadeInDown" data-wow-delay="0.2s">Цены</h3>
+      <div class="first-row light">
+        <div class="first-row__head">
+          <p class="head-subtitle">Наш</p>
+          <h2 class="head-title">Прайс</h2>
+        </div>
+        <p class="text services__text">Предлагаем Вам ознакомиться с ценами на услуги электрика</p>
+      </div>
+      <div class="price__row">
+        <table class="price-table">
+          <tr class="price-table__tr">
+            <th class="price-table__th"></th>
+            <th class="price-table__th">Открытым</th>
+            <th class="price-table__th">В гофре </th>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td">Прокладка кабеля</td>
+            <td class="price-table__td price-table__td--price">12 грн/м</td>
+            <td class="price-table__td price-table__td--price">18 грн/м</td>
+          </tr>
+        </table>
+        <table class="price-table">
+          <tr class="price-table__tr">
+            <th class="price-table__th"></th>
+            <th class="price-table__th">Гипс</th>
+            <th class="price-table__th">Кирпич</th>
+            <th class="price-table__th">Бетон</th>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--2">Выборка отверствия + монтаж подразетника</td>
+            <td class="price-table__td price-table__td--price">40 грн</td>
+            <td class="price-table__td price-table__td--price">60 грн</td>
+            <td class="price-table__td price-table__td--price">90 грн</td>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--2">Штробление без пыли</td>
+            <td class="price-table__td price-table__td--price">30 грн/м</td>
+            <td class="price-table__td price-table__td--price">45 грн/м</td>
+            <td class="price-table__td price-table__td--price">90 грн/м</td>
+          </tr>
+        </table>
+        <table class="price-table">
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--3">Установка выключателя/розетки</td>
+            <td class="price-table__td">40 грн</td>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--3">Монтаж электрощита</td>
+            <td class="price-table__td">200 грн</td>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--3">Монтаж распределительной коробки + сборка схемы</td>
+            <td class="price-table__td">120 грн</td>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--3">Монтаж бра</td>
+            <td class="price-table__td">180 грн</td>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--3">Монтаж люстры</td>
+            <td class="price-table__td">300 грн</td>
+          </tr>
+          <tr class="price-table__tr">
+            <td class="price-table__td price-table__td--3">Монтаж точечного светильника</td>
+            <td class="price-table__td">80 грн</td>
+          </tr>
+        </table>
+        <button class="button price-button popup-button button__popup popup-call-button">Заказать услугу</button>
+      </div>
+      <!-- /.price__row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.price -->
   <section class="services section" id="services">
     <div class="container">
       <h3 class="block__heading services-block__heading light wow fadeInDown" data-wow-delay="0.2s">Наши услуги</h3>
@@ -141,7 +226,7 @@
     <div class="container">
       <div class="about__row">
         <div class="about__img-wrap about__triangle wow fadeInLeft" data-wow-delay="0.5s">
-          <img src="img/picture/about.jpg" alt="project" class="projects__image">
+          <img src="img/picture/about_1.jpg" alt="project" class="projects__image">
         </div>
         <div class="first-row about__first-row">
           <h3 class="about__heading about__heading--all wow fadeInDown" data-wow-delay="0.2s">О нас</h3>
@@ -235,7 +320,7 @@
         <!-- /.projects-item -->
         <div class="projects-item darc hidden">
           <div class="projects__img-wrap projects__top-triangle">
-            <img src="img/picture/proj_2.jpg" alt="project" class="projects__image">
+            <img src="img/picture/proj_6.jpg" alt="project" class="projects__image">
           </div>
           <div class="projects-description">
             <p class="text text-big">Новая почта</p>
@@ -352,15 +437,15 @@
             <div class="form-group">
               <input type="text" autocomplete="off" name="name" class="input form__input quote__input" id="quote-user-name" placeholder="Имя" data-validate-field="name">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <input type="email" autocomplete="off" name="email" class="input form__input quote__input" id="quote-user-email" placeholder="Email" data-validate-field="email">
-            </div>
+            </div> -->
             <div class="form-group">
               <input type="tel" autocomplete="off" name="phone" class="input form__input quote__input" id="quote-user-phone" placeholder="Телефон" data-validate-field="tel">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <input type="text" autocomplete="off" name="subject" class="input form__input quote__input" id="quote-user-subject" placeholder="Тема">
-            </div>
+            </div> -->
             <div class="form-group form-group__textarea">
               <textarea autocomplete="off" rows="5" name="message" class="input textarea form__input quote__input quote__textarea" id="quote-user-message" placeholder="Cообщение"></textarea>
             </div>
@@ -376,12 +461,15 @@
           <div class="header-social footer__contacts-social">
             <div class="header-social__phone footer__contacts-social__phone">
               <img src="img/icon/telephone.svg" alt="telephone" class="phone-icon">
-              <a href="tel:380991220380" class="phone-number">+380 99 122-03-80</a>
+              <div class="phone-number__wrap">
+                <a href="tel:380991220380" class="phone-number">+380 99 122-03-80</a>
+                <a href="tel:380990220380" class="phone-number">+380 99 022-03-80</a>
+              </div>
             </div>
             <div class="header-social__link footer__contacts-social__link">
               <a href="viber://add?number=380668159059" class="item"><img src="img/icon/viber.svg" alt="viber" class="footer__link-image"></a>
-              <a href="mailto:Eduard220V@gmail.com" class="item"><img src="img/icon/gmail-logo.svg" alt="gmail" class="footer__link-image"></a>
-              <a href="#" class="item"><img src="img/icon/telegram.svg" alt="telegram" class="footer__link-image"></a>
+              <!-- <a href="mailto:Eduard220V@gmail.com" class="item"><img src="img/icon/gmail-logo.svg" alt="gmail" class="footer__link-image"></a> -->
+              <a href="tg://resolve?domain=nikname" class="item"><img src="img/icon/telegram.svg" alt="telegram" class="footer__link-image"></a>
             </div>
           </div>
         </div>
@@ -401,9 +489,9 @@
           <div class="form-group popup-group">
             <input type="text" autocomplete="off" name="name" class="input form__input popup__input" id="popup-user-name" placeholder="Имя" data-validate-field="name"> 
           </div>
-          <div class="form-group popup-group">
+          <!-- <div class="form-group popup-group">
             <input type="email" autocomplete="off" name="email" class="input form__input popup__input" id="popup-user-email" placeholder="Email" data-validate-field="email">
-          </div>
+          </div> -->
           <div class="form-group popup-group">
             <input type="tel" autocomplete="off" name="phone" class="input form__input popup__input" id="popup-user-phone" placeholder="Телефон" data-validate-field="tel">
           </div>
@@ -415,7 +503,7 @@
     <!-- /.popup-dialog -->
   </div>
   <!-- /.popup-call popup -->
-  <div class="popup-price popup">
+  <!-- <div class="popup-price popup">
     <div class="popup-dialog">
       <div class="popup-content popup-content--price">
         <button class="popup-close"></button>
@@ -480,10 +568,8 @@
         </table>
         <button class="button popup-button button__popup popup-price-call-button">Заказать услугу</button>
       </div>
-      <!-- /.popup-content -->
     </div>
-    <!-- /.popup-dialog -->
-  </div>
+  </div> -->
   <!-- /.popup-price popup -->
   <div class="popup-question popup">
     <div class="popup-dialog">
@@ -653,7 +739,7 @@
         <div class="popup-body">
           <div class="popup-body__row">
             <div class="services__img-wrap popup-body__img-wrap">
-              <img src="img/picture/proj_5-1.jpg" alt="service" class="services__image">
+              <img src="img/picture/proj_6-1.jpg" alt="service" class="services__image">
             </div>
             <!-- /.swiper-container popup-body__slider -->
             <div class="popup-body__description">

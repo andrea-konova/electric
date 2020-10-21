@@ -185,6 +185,23 @@
       &::after
         transform: rotate(-45deg)
         margin-top: 0
+  .phone
+    &-number
+      padding-left: 0.5rem
+      font-size: 1.125rem
+      color: $light
+      &__wrap
+        display: flex
+        flex-direction: column
+        &--header
+          align-items: flex-end
+          flex-direction: column
+          width: 11rem
+  .phone-number
+    &__item
+      padding: 0 0 0.5rem 0
+      width: 23rem
+      font-size: 2rem
   .menu
     flex-direction: column
     &__item
@@ -194,6 +211,10 @@
         font-weight: bold
   .main
     margin-top: 0
+    &-heading
+      font-size: 2rem
+    &-subheading
+      font-size: 1.5rem
   .services
     &-card 
       flex-basis: 90%

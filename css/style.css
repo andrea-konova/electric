@@ -461,7 +461,7 @@ a {
     padding: 0.6rem 0 1rem; }
     .header-social__phone {
       display: flex;
-      align-items: center; }
+      align-items: start; }
     .header-social__link {
       padding-right: 1rem; }
   .header-menu {
@@ -474,6 +474,13 @@ a {
   padding-left: 0.5rem;
   font-size: 1.125rem;
   color: #ffffff; }
+  .phone-number__wrap {
+    display: flex;
+    flex-direction: column; }
+    .phone-number__wrap--header {
+      display: flex;
+      justify-content: space-between;
+      width: 20rem; }
 
 .link-image {
   padding-left: 2rem; }
@@ -524,11 +531,43 @@ a {
     letter-spacing: 1px;
     color: #ffffff; }
   .main-subheading {
-    margin: 0 0 2.5rem;
+    margin: 0 0 1rem;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #ffffff; }
+  .main__phone-number {
+    margin: 2rem 0; }
+
+.phone-number__item {
+  padding: 0 0 0.5rem 0;
+  width: 23rem;
+  font-size: 2.875rem; }
+
+.price {
+  padding: 1rem 0 3.5rem;
+  background-color: #000000;
+  color: #ffffff; }
+  .price__row {
+    margin-top: 4.5rem; }
+  .price-table {
+    padding: 0 1rem;
+    width: 100%;
+    border-spacing: 4px;
+    border: 2px solid #ffffff; }
+    .price-table__th, .price-table__tr, .price-table__td {
+      font-size: 1rem; }
+    .price-table__td {
+      padding: 0.5rem 0;
+      text-align: left; }
+      .price-table__td--price {
+        text-align: center; }
+      .price-table__td--2 {
+        max-width: 10rem; }
+      .price-table__td--3 {
+        max-width: 12rem; }
+  .price-button {
+    margin-top: 2rem; }
 
 .services {
   padding: 1rem 0 3.5rem;
@@ -1101,6 +1140,21 @@ a {
       .burger--active::after {
         transform: rotate(-45deg);
         margin-top: 0; }
+  .phone-number {
+    padding-left: 0.5rem;
+    font-size: 1.125rem;
+    color: #ffffff; }
+    .phone-number__wrap {
+      display: flex;
+      flex-direction: column; }
+      .phone-number__wrap--header {
+        align-items: flex-end;
+        flex-direction: column;
+        width: 11rem; }
+  .phone-number__item {
+    padding: 0 0 0.5rem 0;
+    width: 23rem;
+    font-size: 2rem; }
   .menu {
     flex-direction: column; }
     .menu__item {
@@ -1110,6 +1164,10 @@ a {
         font-weight: bold; }
   .main {
     margin-top: 0; }
+    .main-heading {
+      font-size: 2rem; }
+    .main-subheading {
+      font-size: 1.5rem; }
   .services-card {
     flex-basis: 90%; }
   .services__img-wrap {

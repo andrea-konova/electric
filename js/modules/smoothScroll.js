@@ -29,5 +29,21 @@ export const smoothScroll = () => {
 				block: 'start'
 			});
 		}
+  });
+  
+  const mainScreen = document.querySelector('.main-screen');
+
+	mainScreen.addEventListener('click', event => {
+		event.preventDefault();
+		const target = event.target;
+
+		if (target.matches('a[href*="#"]')) {
+			const mainScreenId = target.getAttribute('href').substring(1);
+
+			document.getElementById(mainScreenId).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+		}
 	});
 };

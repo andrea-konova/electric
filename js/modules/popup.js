@@ -1,7 +1,7 @@
 export const popup = () => {
 	const body = document.querySelector('body'),
     popupCall = document.querySelector('.popup-call'),
-    popupPrice = document.querySelector('.popup-price'),
+    // popupPrice = document.querySelector('.popup-price'),
     popupQuestion = document.querySelector('.popup-question'),
     popupProject1 = document.querySelector('.popup-project-1'),
     popupProject2 = document.querySelector('.popup-project-2'),
@@ -17,14 +17,14 @@ export const popup = () => {
 			popupCall.style.display = 'block';
     }
     
-    if (target.matches('.popup-price-button')) {
-			popupPrice.style.display = 'block';
-		}
+    // if (target.matches('.popup-price-button')) {
+		// 	popupPrice.style.display = 'block';
+		// }
 
-		if (target.matches('.popup-price-call-button')) {
-			popupPrice.style.display = 'none';
-			popupCall.style.display = 'block';
-		}
+		// if (target.matches('.popup-price-call-button')) {
+		// 	popupPrice.style.display = 'none';
+		// 	popupCall.style.display = 'block';
+		// }
 
 		if (target.matches('.popup-question-button')) {
 			popupQuestion.style.display = 'block';
@@ -56,7 +56,7 @@ export const popup = () => {
 
 		if (target.matches('.popup-close')) {
       popupCall.style.display = 'none';
-      popupPrice.style.display = 'none';
+      // popupPrice.style.display = 'none';
       popupQuestion.style.display = 'none';
       popupProject1.style.display = 'none';
       popupProject2.style.display = 'none';

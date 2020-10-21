@@ -31,10 +31,6 @@ export const sendForms = () => {
 					minLength: 2,
 					maxLength: 15
 				},
-				email: {
-					required: true,
-					email: true
-				},
 				tel: {
 					required: true
         },
@@ -47,9 +43,6 @@ export const sendForms = () => {
 					required: 'Заполните поле имя',
 					minLength: 'Имя не короче 2 символов',
 					maxLength: 'Имя не длиннее 15 символов'
-				},
-				email: {
-					email: 'Введите корректный Email'
 				},
 				tel: {
 					required: 'Заполните поле телефон'
