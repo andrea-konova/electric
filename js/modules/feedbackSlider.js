@@ -3,8 +3,8 @@ export const feedbackSlider = () => {
     loop: true,
     slidesPerView: 2,
 		navigation: {
-			nextEl: '.feedback-button-prev',
-			prevEl: '.feedback-button-next',
+			nextEl: '.feedback-button-next',
+			prevEl: '.feedback-button-prev',
     },
     breakpoints: {
       // when window width is >= 320px
